@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<script src="https://kit.fontawesome.com/f244ab63ac.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="cont">
+        <div id="menus">
+            <nav class="navbar navbar-dark fixed-top" style="background-color:#413FB6 ; height: 150px;">
+
+				<a href="../index.html"><img style="width: 400px;"  src="../img/logo.png" alt=""></a>
+				<button style="margin-left:-130px;color: #413FB6 ;" class="navbar-toggler" type="button"
+					data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<form class="d-flex" role="search" style="width:40%;">
+					<input class="form-control me-2" type="search" placeholder="  ¿Que estas buscando?"
+						aria-label="Search" style="border-radius:10px;border: none;">
+					<button class="btn btn-outline-primary" type="submit" style="border-color:#DCDCDC ;color: #B8B8B8 ;">Buscar</button>
+				</form>
+				<div id="icons" style="margin-left:-40px;padding-right:60px;">
+					<a href="#">
+						<a href="favoritos.html"><i class="fas fa-bookmark"></i></a>
+						<a href="favoritos.html"><span>FAVORITOS</span></a>
+					</a>
+					<a href="#">
+						<a href="login.html"><i class="fas fa-user"></i></a>
+						<a href="login.html"><span>CUENTA</span></a>
+					</a>
+					<a href="#">
+						<a href="carrito.html"> <i class="fas fa-shopping-cart"></i></a>
+						<a href="carrito.html"><span>CARRITO</span></a>
+					</a>
+				</div>
+
+				<div class="offcanvas offcanvas-start " style="background-color: white;" tabindex="-1"
+					id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+					<div class="offcanvas-header" style="background-color: #413FB6;height:70px;">
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+							aria-label="Close"></button>
+					</div>
+
+					<div class="offcanvas-body">
+						<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Categorias</h5>
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="producto.html">Celulares</a>
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="producto3.html">Laptops</a>
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="producto2.html">Accesorios</a>
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="contacto.html">Contactanos</a>
+
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="Nosotros.html">Nosotros</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+        </div>
+    <div id="fav">
+        <div id="nomb">FAVORITOS</div>
+        <div id="favorito">
+            <div id="producto">
+                <div class="dat">
+                    <div class="na1">Nombre Producto</div>
+                    <div class="na2">Precio por unidad</div>
+                    <div class="na3">Estado</div>
+                </div>
+                <div class="detalle">
+                    <div class="img"> <img src="../img/table.png" alt=""></div>
+                    <div class="inform">Tablet Lenovo Tab PII 2da Gen 11.5" <br> 6GB RAM 128GB
+                        ZABG0159PE Storm Grey
+                        <div class="col-1">
+                            <button class="btn btn-primary mt-4">Quitar</button>
+                        </div>
+                    </div>
+                    <div class="prec">s/ 3,599.oo</div>
+                    <div class="stock">En stock</div>
+                    <div class="anadir">Añadido el: abril 25, 2024 <br>
+                       <a href="">Añadir a carrito</a></div>
+                </div>
+                <div class="detalle">
+                    <div class="img"><img src="../img/acer.png" alt=""></div>
+                    <div class="inform">Laptop Acer Aspire A315-58-51
+                        Intel Core <br> i5 8GB.
+                        <div class="col-1">
+                            <button class="btn btn-primary mt-4">Quitar</button>
+                        </div>
+                    </div>
+                    <div class="prec">s/ 2,599.oo</div>
+                    <div class="stock">En stock</div>
+                    <div class="anadir">Añadido el: abril 25, 2024 <br>
+                        <a href="">Añadir a carrito</a></div>
+
+                </div>
+                <div class="detalle">
+                    <div class="img"><img src="../img/HP (2).png" alt=""></div>
+                    <div class="inform">	Laptop HP Victus 15-FB00103.LA
+                        RYZEN5 <br> 56000H FHD 8GB 512GB..
+                        <div class="col-1">
+                            <button class="btn btn-primary mt-4">Quitar</button>
+                        </div>
+                    </div>
+                    <div class="prec">s/ 1,599.oo</div>
+                    <div class="stock">En stock</div>
+                    <div class="anadir">Añadido el: abril 25, 2024 <br>
+                        <a href="">Añadir a carrito</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ </div>
+
+    <div id="foot">
+        <footer id="footer">
+            <div class="container container-footer">
+                <div class="menu-footer">
+
+                    <div class="info">
+                        <p class="title-footer"> <b>Contactanos</b></p>
+                        <ul>
+                            <li><a href="">Chatea con Nosotros</a></li>
+							<li style="color: white;">LLamanos al <a href="https://web.whatsapp.com/">(01)620-4806</a></li>
+							<li><a href="">Visitanos</a></li>
+							<li><a href="https://www.google.com/maps/place/CORPORACI%C3%93N+NOVATEC/@-12.9377497,-74.2506347,21z/data=!4m15!1m8!3m7!1s0x910d823b73974cc9:0xce097af84f3e6627!2sHuanta!3b1!8m2!3d-12.9384113!4d-74.2502122!16s%2Fm%2F047t52z!3m5!1s0x910d832fd6c506cf:
+                                0x1f6753fca89919b7!8m2!3d-12.9377464!4d-74.2505608!16s%2Fg%2F11ny1t0lpr?entry=ttu">Av. Mariscal Castilla 45</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p class="title-footer"> <b>Acerca de NOVATEC</b></p>
+                        <ul>
+                            <li><a href="">Nosotros</a></li>
+                            <li><a href="">tiendas</a></li>
+                            <li><a href="">Visitanos</a></li>
+                            <li><a href="">Libro de reclamaciones</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p class="title-footer"> <b>Atencion al cliente</b></p>
+                        <ul>
+                            <li><a href="">Preguntas frecuente</a></li>
+                            <li><a href="">Tutorial de compra</a></li>
+                            <li><a href="">Cambios y devoluciones</a></li>
+                            <li><a href="">Terminos y condiciones</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="newsletter">
+                        <p class="title-footer"><b>Siguenos en</b></p>
+                        <a href="https://www.facebook.com/profile.php?id=100090318878031&locale=es_LA"><img src="../img/face.png" alt=""></a>
+						<a href="https://www.youtube.com/?app=desktop&hl=es"><img src="../img/youtu.png" alt=""></a>
+						<a href="https://www.instagram.com/"><img src="../img/insta.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>

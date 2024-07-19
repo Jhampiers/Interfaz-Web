@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrito</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style.css">
+</head>
+<script src="https://kit.fontawesome.com/f244ab63ac.js" crossorigin="anonymous"></script>
+
+<body>
+	<div id="cont">
+		<div id="menus">
+			<nav class="navbar navbar-dark fixed-top" style="background-color:#413FB6 ; height: 150px;">
+
+				<a href="../index.html"><img style="width: 400px;"  src="../img/logo.png" alt=""></a>
+				<button style="margin-left:-130px;color: #413FB6 ;" class="navbar-toggler" type="button"
+					data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<form class="d-flex" role="search" style="width:40%;">
+					<input class="form-control me-2" type="search" placeholder="  ¿Que estas buscando?"
+						aria-label="Search" style="border-radius:10px;border: none;">
+					<button class="btn btn-outline-primary" type="submit" style="border-color:#DCDCDC ;color: #B8B8B8 ;">Buscar</button>
+				</form>
+				<div id="icons" style="margin-left:-40px;padding-right:60px;">
+					<a href="#">
+						<a href="favoritos.html"><i class="fas fa-bookmark"></i></a>
+						<a href="favoritos.html"><span>FAVORITOS</span></a>
+					</a>
+					<a href="#">
+						<a href="login.html"><i class="fas fa-user"></i></a>
+						<a href="login.html"><span>CUENTA</span></a>
+					</a>
+					<a href="#">
+						<a href="carrito.html"> <i class="fas fa-shopping-cart"></i></a>
+						<a href="carrito.html"><span>CARRITO</span></a>
+					</a>
+				</div>
+
+				<div class="offcanvas offcanvas-start " style="background-color: white;" tabindex="-1"
+					id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+					<div class="offcanvas-header" style="background-color: #413FB6;height:70px;">
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+							aria-label="Close"></button>
+					</div>
+
+					<div class="offcanvas-body">
+						<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Categorias</h5>
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="producto.html">Celulares</a>
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="producto3.html">Laptops</a>
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="producto2.html">Accesorios</a>
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="contacto.html">Contactanos</a>
+
+							</li>
+							<li class="nav-item">
+								<a style="color: black;" class="nav-link active" aria-current="page"
+									href="Nosotros.html">Nosotros</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<div id="carrit">
+			<div id="nombre">
+				<p>CARRITO</p>
+			</div>
+			<div id="carrito">
+				<div class="producto">
+					<div class="datos">
+						<div class="name1">PRODUCTO</div>
+						<div class="name2">PRECIO</div>
+						<div class="name3">CANTIDAD</div>
+						<div class="name4">SUBTOTAL</div>
+					</div>
+					<div class="detalle">
+						<div class="foto">
+							<img src="../img/table.png" alt="">
+						</div>
+						<div class="info">Tablet Lenovo Tab PII 2da Gen 11.5" <br>
+							6GB RAM 128GB
+							ZABG0159PE Storm Grey
+							<div class="col-1">
+								<button  class="btn btn-primary mt-4">Quitar</button>
+							</div>
+						</div>
+						<div id="precio" class="col-1 p-0 h-100"><input id="precio_p1" type="hidden" value="1680"
+							readonly>S/1.680.00</div>
+
+						<div id="cantidad" class="col-3 p-4 h-100 row">
+							<button class="btn btn-primary col-2 h-50 m-1" onclick="restarcantidad();">-</button>
+							<input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
+							<button class="btn btn-secondary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
+						</div>
+
+						<div id="subtotal" class="col-1 p-0 h-100">S/1.680.00</div>
+					</div>
+					<div class="detalle">
+						<div class="foto">
+							<img src="https://topesdegama.com/app/uploads-topesdegama.com/2022/12/tablets-para-regalar-lenovo-tab-p11-e1706788173785.jpg?x=480&quality=40" alt="">
+						</div>
+						<div class="info">Tablet Lenovo Tab PII 2da Gen 11.5" <br>
+							6GB RAM 128GB
+							ZABG0159PE Storm Grey
+							<div class="col-1">
+								<button class="btn btn-primary mt-4">Quitar</button>
+							</div>
+						</div>
+						<div id="precio" class="col-1 p-0 h-100"><input id="precio_p1" type="hidden" value="30"
+							readonly>S/30.00</div>
+
+						<div id="cantidad" class="col-3 p-4 h-100 row">
+							<button class="btn btn-primary col-2 h-50 m-1" onclick="restarcantidad();">-</button>
+							<input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
+							<button class="btn btn-secondary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
+						</div>
+
+						<div id="subtotal" class="col-1 p-0 h-100">S/90.00</div>
+
+					</div>
+					<div class="detalle">
+						<div class="foto">
+							<img src="https://store.itinspirate.com/Assets/images/uploads/pro_26191bedab657ed929b19eef0b30d836.jpg" alt="">
+						</div>
+						<div class="info">Tablet Lenovo Tab PII 2da Gen 11.5" <br>
+							6GB RAM 128GB
+							ZABG0159PE Storm Grey
+							<div class="col-1">
+								<button class="btn btn-primary mt-4">Quitar</button>
+							</div>
+						</div>
+						<div id="precio" class="col-1 p-0 h-100"><input id="precio_p1" type="hidden" value="30"
+							readonly>S/30.00</div>
+
+						<div id="cantidad" class="col-3 p-4 h-100 row">
+							<button class="btn btn-primary col-2 h-50 m-1" onclick="restarcantidad();">-</button>
+							<input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
+							<button class="btn btn-secondary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
+						</div>
+
+						<div id="subtotal" class="col-1 p-0 h-100">S/90.00</div>
+					</div>
+
+				</div>
+				<div id="pago">
+					<div class="caj">
+						<div class="subtotal">Subtotal</div>
+						<div class="valor">s/ 15976.00</div>
+					</div>
+					<div class="caj">
+						<div class="total2">Descuentos</div>
+						<div class="valorr">S/ -1,480.00</div>
+					</div>
+					<div class="caj">
+						<div class="total2"><b>Total</b></div>
+						<div class="valorr">s/ 14496.00</div>
+					</div>
+					<div class="caj">
+						<div class="pagar">
+							<button style="cursor: pointer;"><b>Ir a pagar</b></button>
+						</div>
+					</div>
+					<div class="caj">
+						<div class="metodo"> <b>Metodos de pago</b></div>
+					</div>
+					<div class="caj">
+						<img src="../img/visa.png" alt="" width="50px" height="30px">
+						<img src="../img/efectivo.png" alt="" width="60px" height="30px">
+						<img src="../img/plin.png" alt="" width="50px" height="30px">
+						<img src="../img/yape.png" alt="" width="50px" height="40px">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="foot">
+		<footer id="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+
+					<div class="info">
+						<p class="title-footer"> <b>Contactanos</b></p>
+						<ul>
+							<li><a href="">Chatea con Nosotros</a></li>
+							<li style="color: white;">LLamanos al <a href="https://web.whatsapp.com/">(01)620-4806</a></li>
+							<li><a href="">Visitanos</a></li>
+							<li><a href="https://www.google.com/maps/place/CORPORACI%C3%93N+NOVATEC/@-12.9377497,-74.2506347,21z/data=!4m15!1m8!3m7!1s0x910d823b73974cc9:0xce097af84f3e6627!2sHuanta!3b1!8m2!3d-12.9384113!4d-74.2502122!16s%2Fm%2F047t52z!3m5!1s0x910d832fd6c506cf:
+								0x1f6753fca89919b7!8m2!3d-12.9377464!4d-74.2505608!16s%2Fg%2F11ny1t0lpr?entry=ttu">Av. Mariscal Castilla 45</a></li>
+
+						</ul>
+					</div>
+					<div class="info">
+						<p class="title-footer"> <b>Acerca de NOVATEC</b></p>
+						<ul>
+							<li><a href="">Nosotros</a></li>
+							<li><a href="">tiendas</a></li>
+							<li><a href="">Visitanos</a></li>
+							<li><a href="">Libro de reclamaciones</a></li>
+
+						</ul>
+					</div>
+					<div class="info">
+						<p class="title-footer"> <b>Atencion al cliente</b></p>
+						<ul>
+							<li><a href="">Preguntas frecuente</a></li>
+							<li><a href="">Tutorial de compra</a></li>
+							<li><a href="">Cambios y devoluciones</a></li>
+							<li><a href="">Terminos y condiciones</a></li>
+
+						</ul>
+					</div>
+					<div class="newsletter">
+						<p class="title-footer"><b>Siguenos en</b></p>
+						<a href="https://www.facebook.com/profile.php?id=100090318878031&locale=es_LA"><img src="../img/face.png" alt=""></a>
+						<a href="https://www.youtube.com/?app=desktop&hl=es"><img src="../img/youtu.png" alt=""></a>
+						<a href="https://www.instagram.com/"><img src="../img/insta.png" alt=""></a>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+</body>
+<script>
+    function sumarcantidad() {
+        var precio = document.getElementById('precio_p1').value;
+        var cantidad = document.getElementById('cantidad_p1').value;
+        var nueva_cantidad = parseInt(cantidad) + 1;
+        document.getElementById('cantidad_p1').value = nueva_cantidad;
+        calcular_subtotal(precio, nueva_cantidad);
+    }
+    function restarcantidad() {
+        var precio = document.getElementById('precio_p1').value;
+        var cantidad = document.getElementById('cantidad_p1').value;
+        if (cantidad > 1) {
+            var nueva_cantidad = parseInt(cantidad) - 1;
+            document.getElementById('cantidad_p1').value = nueva_cantidad;
+            calcular_subtotal(precio, nueva_cantidad);
+        }
+
+    }
+    function calcular_subtotal(precio, cantidad) {
+        var subtotal = precio * cantidad;
+        document.getElementById('subtotal').innerHTML = 'S/. ' + subtotal;
+    }
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+	crossorigin="anonymous"></script>
+
+</html>
